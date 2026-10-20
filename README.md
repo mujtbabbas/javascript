@@ -18,8 +18,22 @@ Other Style Guides
   - [CSS & Sass](https://github.com/airbnb/css)
   - [Ruby](https://github.com/airbnb/ruby)
 
+## About This Standalone Edition
+
+- **Main repository:** [airbnb/javascript](https://github.com/airbnb/javascript)
+- **Based on version:** upstream commit `8ed19247bef145e3cc41b24a02dd1fe6d9b5e681` (snapshotted 2026-10-20; upstream HEAD dated 2026-02-21)
+- **This edition:** v1.1.0 (v1.0.0 = clean baseline of the upstream version above)
+- **What was done:** Converted from a fork into a standalone repository (fresh history, baseline commit), then enhanced in place by Syed Mujtaba Abbas.
+- **Enhancements in this edition (v1.1.0):**
+  - This About section, with full upstream credit and version provenance
+  - `ENHANCEMENTS.md` — per-version changelog of everything changed in this edition
+  - `.github/dependabot.yml` — weekly GitHub Actions and npm dependency updates (root and both eslint-config packages)
+  - `.markdownlint.json` + `.github/workflows/markdown-check.yml` — markdown linting automation for the style-guide docs (upstream Node test workflows and the repo's own `linters/.markdownlint.json` kept as-is)
+- **Credit & licence:** All original work belongs to Airbnb and the upstream contributors. Licence is preserved unchanged — see `LICENSE.md` (MIT). This edition adds the enhancements listed above only.
+
 ## Table of Contents
 
+  1. [About This Standalone Edition](#about-this-standalone-edition)
   1. [Types](#types)
   1. [References](#references)
   1. [Objects](#objects)
