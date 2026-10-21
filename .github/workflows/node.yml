@@ -53,7 +53,7 @@ jobs:
       - run: node -pe "require('eslint/package.json').version"
         name: 'eslint version'
       - run: npm run travis
-      - uses: codecov/codecov-action@v5
+      - uses: codecov/codecov-action@v7
 
   react:
     needs: [matrix]
@@ -90,7 +90,7 @@ jobs:
       - run: npm install --no-save "eslint-plugin-react-hooks@${{ matrix.react-hooks }}"
         if: ${{ matrix.react-hooks > 0}}
       - run: npm run travis
-      - uses: codecov/codecov-action@v5
+      - uses: codecov/codecov-action@v7
 
   prepublish-base:
     name: 'prepublish tests (base config)'
