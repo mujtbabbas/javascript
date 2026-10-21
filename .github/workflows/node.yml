@@ -42,7 +42,7 @@ jobs:
         working-directory: "packages/${{ matrix.package }}"
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: ljharb/actions/node/install@main
         name: 'nvm install ${{ matrix.node-version }} && npm install'
         with:
@@ -77,7 +77,7 @@ jobs:
         working-directory: "packages/${{ matrix.package }}"
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: ljharb/actions/node/install@main
         name: 'nvm install ${{ matrix.node-version }} && npm install'
         with:
@@ -109,7 +109,7 @@ jobs:
         working-directory: "packages/${{ matrix.package }}"
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: ljharb/actions/node/install@main
         name: 'nvm install lts/* && npm install'
         with:
@@ -142,7 +142,7 @@ jobs:
         working-directory: "packages/${{ matrix.package }}"
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: ljharb/actions/node/install@main
         name: 'nvm install lts/* && npm install'
         with:
